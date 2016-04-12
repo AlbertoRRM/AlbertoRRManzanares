@@ -1,0 +1,23 @@
+#ifndef mailList_h
+#define mailList_h
+
+#include "mail.h"
+
+const int Max_Mails = 50;
+typedef tMail tArrayMails[Max_Mails];
+
+typedef struct
+{
+	tArrayMails list;
+	int counter;
+}tMailList;
+
+void initialize(tMailList &mails); //Initialize a list of mails
+bool load(tMailList &mails, std::string domain); //Load a list of mails from a file
+void save(const tMailList &mails, std::string domain); //Save a list of mails into a file
+bool insert(tMailList &mails, const tMail &mail); //Insert a new mail in the list
+bool find(const tMailList &mails, std::string id, int &pos); //Find a mail in the list given a id
+void bubble(tMailList &mails); //Sort the list using the bubble algorithm
+bool operator<(tMail leftMail, tMail rightMail); //Operator redefined to search in the bubble algorithm
+
+#endif
