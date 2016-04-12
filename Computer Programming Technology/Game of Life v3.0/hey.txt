@@ -1,0 +1,11 @@
+Simple
+6
+5
+2 1 simple 1 2
+2 2 simple 1 2
+2 3 simple 1 2
+3 2 simple 1 2
+3 3 simple 1 2
+4 1 simple 1 2
+4 4 simple 1 2
+-1
