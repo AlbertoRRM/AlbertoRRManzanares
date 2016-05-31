@@ -1,0 +1,43 @@
+** 2nd REVISION
+
+ 1. Visibility of field dim of ConnectNFactory/ConnectNRules has been changed
+    to 'protected'.
+ 
+    # This change does not affect you.
+ 
+ 2. Signature of method 'evaluate' in GameRules has been changed, it has one 
+    more argument now.
+ 
+    # In your factories, you have to add the fourth argument of evaluate. It 
+      should not affect you since we have not used it yet.
+   
+ 3. GameFactory interface now implements java.io.Serializable
+ 
+    # You will get some warnings in the classes the implement this interface, 
+      asking to add a serializeId, etc.
+ 
+ 4. Added AIPlayer that uses an AIAlgorithm. Modified createAIPlayer of ConnectNFactory 
+    to use (a subclass of) this player if the provided algorithm is
+    not null. Implemented a simple evaluate method for ConnectN.
+    
+    # This change does not affect you.
+
+ 5. The package name connectN has been converted to lower-case.
+
+    # You will need to update code that relies on this package
+
+ 6. Minor spelling fixes and enum name changes in Main
+
+    # This change does not affect you, although you may wish to make similar
+      changes to your code.
+
+ 7. Fixed broken advanced-tick-tack-toe functionality
+
+    # This change does not affect your code, but it may come in as an
+      inspiration to improve your P4 code.
+
+
+** 3rd REVISION
+
+
+ 
